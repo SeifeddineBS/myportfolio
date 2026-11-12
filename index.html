@@ -2,423 +2,408 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seifeddine Ben Salah | Full Stack Software Engineer</title>
+  <meta name="description"
+    content="Full Stack Software Engineer in Germany. I build headless commerce platforms with TypeScript, Vue/Nuxt, PHP and Node.js: VPACE, RABE Bike, Kitchenz and more.">
+  <meta name="author" content="Seifeddine Ben Salah">
+  <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0d" media="(prefers-color-scheme: dark)">
 
-  <title>My Resume</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seifeddine Ben Salah | Full Stack Software Engineer">
+  <meta property="og:description"
+    content="I build headless commerce platforms with TypeScript, Vue/Nuxt, PHP and Node.js.">
+  <meta property="og:url" content="https://seifeddinebs.github.io/myportfolio/">
+  <meta property="og:image" content="https://seifeddinebs.github.io/myportfolio/img/vpace.jpg">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2315150f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%23ff6a3d'%3ES%3C/text%3E%3C/svg%3E">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet">
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="assets/style.css">
 
-  <link rel="icon" href="img/portfolio.png" type="image/x-icon">
-
-
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+  <script>
+    // Apply the saved theme before first paint
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { }
+  </script>
 </head>
 
-<body id="page-top">
+<body>
+  <a class="skip" href="#work">Skip to content</a>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">My Portfolio</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-
-      </ul>
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Seifeddine Ben Salah, back to top">
+        <span class="brand__mark">S</span>
+        <span class="brand__name">Seifeddine Ben Salah</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme" id="theme" type="button" aria-label="Switch between light and dark theme">
+        <svg class="theme__sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+        <svg class="theme__moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" />
+        </svg>
+      </button>
     </div>
-  </nav>
+  </header>
 
-  <div class="container-fluid p-0">
+  <main id="top">
 
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">Seifeddine
-          <span class="text-primary">Ben Salah</span>
+    <!-- ================= HERO ================= -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Full Stack Software Engineer · Germany</p>
+        <h1 class="hero__title reveal">
+          I build <em>headless commerce</em> platforms, from storefront to backend.
         </h1>
-        <div class="subheading mb-5">Wettersteinstr.1 d, 86899 Landsberg, Germany · +49 152 26610465
-          <a href="seifeddine.bensalah@gmail.com">seifeddine.bensalah@gmail.com</a>
+        <p class="hero__lead reveal">
+          I'm Seifeddine, a full stack engineer with 3+ years of experience delivering production web
+          applications and e-commerce platforms. I work in TypeScript, Vue/Nuxt, PHP and Node.js, and take
+          projects from implementation through release.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--solid" href="#work">See my work <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="mailto:seifeddine.bensalah@gmail.com">Get in touch</a>
         </div>
-        <p class="mb-5">I am a dedicated Full Stack Engineer with a solid foundation in computer science and web
-          development. With international experience and a diverse skill set, I am passionate about tackling complex
-          challenges and contributing to innovative solutions. My education has equipped me with proficiency in
-          several programming languages, and I have honed my technical skills through diverse
-          projects and teamwork. As an exchange student in Germany, I gained a global perspective on computer science
-          and strengthened my problem-solving abilities during my last experiences. Recently graduating and eager to
-          transition into a full-time role, I remain committed to continuous learning and staying at the forefront of
-          this ever-evolving field. I am excited about the opportunity to contribute to a dynamic and innovative
-          organization and to align my skills and enthusiasm with their goals.</p>
-        <ul class="list-inline list-social-icons mb-0">
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/seifeddinebensalah/">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse" title="My Linkedin Account"></i>
-              </span>
-            </a>
-          </li>
+      </div>
 
-          <li class="list-inline-item">
-            <a href="https://www.xing.com/profile/Seifeddine_BENSALAH">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-xing fa-stack-1x fa-inverse" title="My Xing Account"></i>
-              </span>
-            </a>
-          </li>
+      <aside class="hero__card reveal">
+        <div class="portrait">
+          <img src="img/profile.jpg" width="560" height="560" alt="Portrait of Seifeddine Ben Salah">
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Now</dt>
+            <dd>Full Stack Developer at Kickserve GmbH</dd>
+          </div>
+          <div>
+            <dt>Based in</dt>
+            <dd>Landsberg am Lech, open to relocation across Germany</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Nuxt · Vue Storefront · Shopware 6 · Magento 2</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
 
-          <style>
-            .inline-div {
-              display: inline-block;
-            }
-          </style>
+    <section class="stats wrap" aria-label="Key facts">
+      <div class="stat reveal"><b>3+</b><span>years building production web apps</span></div>
+      <div class="stat reveal"><b>3</b><span>commerce platforms delivered end to end</span></div>
+      <div class="stat reveal"><b>5</b><span>languages spoken, from Arabic to German</span></div>
+    </section>
 
+    <!-- ================= WORK ================= -->
+    <section class="section wrap" id="work">
+      <header class="section__head reveal">
+        <p class="eyebrow">01 · Selected work</p>
+        <h2>Shops I built that are <em>live today</em>.</h2>
+        <p class="section__note">Client platforms delivered at Kickserve GmbH, where I was responsible for
+          frontend and backend development, integrations, testing and production releases.</p>
+      </header>
 
-          <li class="list-inline-item">
-            <a href="https://github.com/SeifeddineBS">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse" title="My Github Account"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
+      <article class="project reveal">
+        <a class="shot" href="https://www.vpace.de/" target="_blank" rel="noopener"
+          aria-label="Open vpace.de in a new tab">
+          <span class="shot__bar"><i></i><i></i><i></i><span>vpace.de</span></span>
+          <img src="img/vpace.jpg" width="1280" height="800" loading="lazy" alt="Homepage of the VPACE online shop">
+        </a>
+        <div class="project__body">
+          <p class="project__meta"><span>01</span> Performance bike brand · 2025 to present</p>
+          <h3>VPACE</h3>
+          <p>A headless commerce platform with a Nuxt 3 frontend and a Shopware 6 backend, in German and
+            English. I built and evolved the platform, implementing business features and integrating
+            services across both systems.</p>
+          <ul class="tags">
+            <li>Nuxt 3</li>
+            <li>Vue 3</li>
+            <li>TypeScript</li>
+            <li>Shopware 6</li>
+            <li>PHP 8</li>
+            <li>Symfony</li>
+          </ul>
+          <a class="link" href="https://www.vpace.de/" target="_blank" rel="noopener">Visit vpace.de <span
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project project--flip reveal">
+        <a class="shot" href="https://www.rabe-bike.de/" target="_blank" rel="noopener"
+          aria-label="Open rabe-bike.de in a new tab">
+          <span class="shot__bar"><i></i><i></i><i></i><span>rabe-bike.de</span></span>
+          <img src="img/rabe.jpg" width="1280" height="800" loading="lazy"
+            alt="Homepage of the RABE Bike online shop">
+        </a>
+        <div class="project__body">
+          <p class="project__meta"><span>02</span> Bicycle retailer · 2025 to present</p>
+          <h3>RABE Bike</h3>
+          <p>A full platform rebuild spanning Vue Storefront, Node.js APIs, Magento 2 and WordPress. I worked
+            across every application layer and the services connected to them.</p>
+          <ul class="tags">
+            <li>Vue Storefront</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>Magento 2</li>
+            <li>Elasticsearch</li>
+            <li>WordPress</li>
+          </ul>
+          <a class="link" href="https://www.rabe-bike.de/" target="_blank" rel="noopener">Visit rabe-bike.de <span
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <a class="shot" href="https://www.kitchenz.de/" target="_blank" rel="noopener"
+          aria-label="Open kitchenz.de in a new tab">
+          <span class="shot__bar"><i></i><i></i><i></i><span>kitchenz.de</span></span>
+          <img src="img/kitchenz.jpg" width="1280" height="800" loading="lazy"
+            alt="Homepage of the Kitchenz online shop">
+        </a>
+        <div class="project__body">
+          <p class="project__meta"><span>03</span> Online kitchen retailer · 2025 to present</p>
+          <h3>Kitchenz</h3>
+          <p>A complete shop rebuild using Nuxt and Shopware 6, covering application features, backend
+            functionality and system integrations.</p>
+          <ul class="tags">
+            <li>Nuxt</li>
+            <li>Vue 3</li>
+            <li>TypeScript</li>
+            <li>Shopware 6</li>
+            <li>PHP 8</li>
+          </ul>
+          <a class="link" href="https://www.kitchenz.de/" target="_blank" rel="noopener">Visit kitchenz.de <span
+              aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <div class="more reveal">
+        <p class="eyebrow">Also at Kickserve</p>
+        <div class="more__grid">
+          <a class="mini" href="https://www.rotwild.com/" target="_blank" rel="noopener">
+            <h4>ROTWILD <span aria-hidden="true">↗</span></h4>
+            <p>Development and maintenance for the bike manufacturer's web presence: production fixes and
+              third-party integrations.</p>
+          </a>
+          <a class="mini" href="https://iim.de/" target="_blank" rel="noopener">
+            <h4>IIM <span aria-hidden="true">↗</span></h4>
+            <p>Development and maintenance of the real estate company's TYPO3 site, including CMS upgrades and
+              production fixes.</p>
+          </a>
+          <div class="mini">
+            <h4>Across all projects</h4>
+            <p>Testing, CI/CD and technical SEO, with Claude Code in the daily workflow alongside manual review.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div class="my-auto">
-        <h2 class="mb-5">Experience</h2>
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section wrap" id="experience">
+      <header class="section__head reveal">
+        <p class="eyebrow">02 · Experience</p>
+        <h2>Where I've <em>worked</em>.</h2>
+      </header>
 
-
-
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Software Developer</h3>
-            <div class="subheading mb-3">iComplai - Early Warning System for Food Supply Chain</div>
-            <p>Analysis and forecasting of food risks in logistic chains by integrating high-dimensional data streams
-              for real-time assessment. Leveraging billions of daily updated data points, I monitored emerging risks
-              across the supply chain, including raw materials and suppliers. This allowed for dynamic adjustments to
-              supplier quality control and HACCP risk ratings, providing customized warnings and ensuring proactive food
-              safety management.</p>
+      <ol class="timeline">
+        <li class="job reveal">
+          <p class="job__date">Jan 2025 – Present</p>
+          <div>
+            <h3>Full Stack Developer</h3>
+            <p class="job__org"><a href="https://kickserve.de/" target="_blank" rel="noopener">Kickserve GmbH</a>
+              · Software development &amp; digital commerce · Landsberg am Lech</p>
+            <ul>
+              <li>Independently delivered three major client platforms: frontend, backend, integrations,
+                testing and production releases.</li>
+              <li>Developed and maintained additional client systems, including CMS upgrades, production fixes
+                and third-party integrations.</li>
+              <li>Contributed to testing, CI/CD and technical SEO.</li>
+            </ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">November 2023 - May 2024</span>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">Nov 2023 – Dec 2024</p>
+          <div>
+            <h3>Working Student, Software Developer</h3>
+            <p class="job__org"><a href="https://www.icomplai.com/" target="_blank" rel="noopener">iComplai</a>
+              · Supply-chain risk intelligence · Munich</p>
+            <ul>
+              <li>Built Python pipelines to collect, process and analyze supply-chain risk data for monitoring
+                and forecasting.</li>
+              <li>Containerized and deployed services on AWS; built monitoring and reporting with CloudWatch
+                and QuickSight.</li>
+            </ul>
           </div>
-        </div>
-
-
-
-
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Full Stack Web Developer</h3>
-            <div class="subheading mb-3">Hæppie Sales Space</div>
-            <p>Created a web application designed to revolutionize the sales and
-              customer success processes. Haeppie empowers teams by providing
-              personalized and interactive Sales Spaces, integrating seamlessly with
-              popular CRMs. It centralizes buyer journeys, simplifies sharing
-              post-demo follow-ups, onboarding, and deal information, resulting in
-              increased efficiency and improved sales outcomes.</p>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">Feb 2023 – Nov 2023</p>
+          <div>
+            <h3>Full Stack Developer Intern</h3>
+            <p class="job__org">Hæppie Sales Space · B2B SaaS · Munich</p>
+            <ul>
+              <li>Built Angular/TypeScript and Node.js features for sales workflows, including CRM-connected
+                processes.</li>
+              <li>Developed REST endpoints and PostgreSQL data models; supported Docker-based deployments on
+                AWS.</li>
+            </ul>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">February 2023 - November 2023</span>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">Jul 2022 – Dec 2022</p>
+          <div>
+            <h3>Full Stack Developer Intern</h3>
+            <p class="job__org">Tsunami IT · Quebec, Canada</p>
+            <ul>
+              <li>Developed an internal ERP application for project tracking, collaboration and status
+                visibility, with Angular, Laravel and MySQL.</li>
+            </ul>
           </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Full Stack Web Developer</h3>
-            <div class="subheading mb-3">Tsunami IT</div>
-            <p>• Developed an internally built ERP software solution at Tsunami IT to
-              effectively monitor ongoing projects across various teams within the
-              company. This comprehensive solution streamlined project
-              management processes, enabling seamless collaboration and
-              real-time tracking of progress .Successfully delivered a customized
-              ERP system that empowered the company to optimize project
-              monitoring and achieve streamlined operations.
-              • Created a web-based version of the classic Scrabble game, utilizing
-              text-based commands for player actions. Developed an engaging and
-              interactive platform that faithfully recreates the gameplay
-              experience.Implemented intuitive text-based input for player moves,
-              capturing the essence of the original game while providing a
-              modernized and accessible user interface.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2022 - September 2022</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Full Stack Web Developer</h3>
-            <div class="subheading mb-3">Five Points The Talent Pool</div>
-            <p> Led the development of an innovative web, desktop, and mobile
-              application revolutionizing well-being and mental health support.
-              Comprehensive features include advanced mood tracking,
-              personalized goal setting, and actionable insights. Empowers
-              individuals to proactively enhance overall well-being through intuitive
-              user experience and seamless functionality.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2021 - August 2021</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Frontend Web Developer</h3>
-            <div class="subheading mb-3">Balloon Advertising Tunisia</div>
-            <p>• Developed an impactful e-commerce web application showcasing a
-              diverse range of products and comprehensive company services.
-              Seamlessly facilitating online product sales, the application also
-              highlights event organization, balloon sales, and quote requests.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2020 - September 2020</span>
-          </div>
-        </div>
-
-      </div>
-
+        </li>
+      </ol>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-      <div class="my-auto">
-        <h2 class="mb-5">Education</h2>
+    <!-- ================= SKILLS ================= -->
+    <section class="section wrap" id="skills">
+      <header class="section__head reveal">
+        <p class="eyebrow">03 · Skills</p>
+        <h2>The <em>stack</em> I work with.</h2>
+      </header>
 
-
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">FH Schmalkalden University of Applied Sciences </h3>
-            <div class="subheading mb-3">Exchange Student</div>
-            <div>Computer Science </div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2022 - September 2023</span>
-          </div>
+      <div class="skills">
+        <div class="skill reveal">
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS/SCSS</li>
+          </ul>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row mb-5">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">The Private Higher School of Engineering and Technology</h3>
-            <div class="subheading mb-3">National Engineering Diploma</div>
-            <div>Computer Science - Web Development Speciality</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2018 - June 2023</span>
-          </div>
+        <div class="skill reveal">
+          <h3>Frontend</h3>
+          <ul class="tags">
+            <li>Vue 3</li>
+            <li>Nuxt 3</li>
+            <li>Vue Storefront</li>
+            <li>Angular</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+          </ul>
         </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Aouina High School</h3>
-            <div class="subheading mb-3">Baccalaureate diploma in mathematics</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2014 - June 2018</span>
-          </div>
+        <div class="skill reveal">
+          <h3>Backend &amp; APIs</h3>
+          <ul class="tags">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Symfony</li>
+            <li>Laravel</li>
+            <li>REST APIs</li>
+            <li>Third-party integrations</li>
+          </ul>
         </div>
-
+        <div class="skill reveal">
+          <h3>Commerce &amp; CMS</h3>
+          <ul class="tags">
+            <li>Shopware 6</li>
+            <li>Magento 2</li>
+            <li>OXID eShop</li>
+            <li>TYPO3</li>
+            <li>Kirby</li>
+            <li>WordPress</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Data &amp; Cloud</h3>
+          <ul class="tags">
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Elasticsearch</li>
+            <li>Redis</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div class="skill reveal">
+          <h3>Delivery &amp; AI</h3>
+          <ul class="tags">
+            <li>Git</li>
+            <li>GitHub Actions</li>
+            <li>CI/CD</li>
+            <li>Playwright</li>
+            <li>Vitest</li>
+            <li>Cypress</li>
+            <li>Sentry</li>
+            <li>Claude Code</li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-      <div class="my-auto">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-              <i class="devicons devicons-html5" title="HTML"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-css3" title="CSS"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-javascript" title="JavaScript"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-typescript-plain" title="TypeScript"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-jquery" title="jQuery"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-sass" title="Sass"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-nodejs" title="Node.js"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-express-original-wordmark" title="Express.js"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-angularjs-plain" title="AngularJS"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-react-original-wordmark" title="React"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-vuejs-plain" title="Vue.js"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-npm" title="npm"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-c-plain" title="C"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-cplusplus-plain" title="C++"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-csharp-plain" title="C#"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-spring-plain-wordmark" title="Spring"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-python" title="Python"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-django-plain-wordmark" title="Django"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-symfony-original-wordmark" title="Symfony"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-laravel-plain-wordmark" title="Laravel"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-dot-net-plain-wordmark" title=".NET"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicons devicons-amazonwebservices-plain-wordmark" title="AWS"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-docker-plain" title="Docker"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-kubernetes-plain" title="Kubernetes"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-mongodb-plain-wordmark" title="MongoDB"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-oracle-original" title="Oracle"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-postgresql-plain-wordmark" title="PostgreSQL"></i>
-          </li>
-          <li class="list-inline-item">
-              <i class="devicon-git-plain-wordmark" title="Git"></i>
-          </li>
-      </ul>
-
-        <div class="subheading mb-3">Qualities</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Quick Learner
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Perfectionist
-          </li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Punctual
-          </li>
-          <li>
-
-        </ul>
+      <div class="duo">
+        <div class="reveal">
+          <p class="eyebrow">Education</p>
+          <ul class="plain">
+            <li><b>Engineering Diploma in Computer Science</b><span>ESPRIT, Tunis · 2018 – 2023</span></li>
+            <li><b>Exchange Semester in Computer Science</b><span>Hochschule Schmalkalden, Germany · 2022 –
+                2023</span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Languages</p>
+          <ul class="plain plain--row">
+            <li><b>Arabic</b><span>Native</span></li>
+            <li><b>French</b><span>Bilingual</span></li>
+            <li><b>English</b><span>C1</span></li>
+            <li><b>German</b><span>B1–B2</span></li>
+            <li><b>Spanish</b><span>Basic</span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-      <div class="my-auto">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy a well-rounded and active lifestyle. To stay healthy and sportive,
-          I regularly hit the gym, challenging myself both mentally and physically. Additionally, I'm actively involved
-          in various associative clubs dedicated to helping people, drawing from my experience as a founder member of
-          ROTARact Esprit in Tunisia, where we were deeply committed to making a positive impact on our community.
-
-          When I have the opportunity, I relish the chance to explore different parts of the world through travel,
-          discovering new cultures and experiences. It's a passion that keeps me curious and engaged.</p>
-        <p class="mb-0">Indoors, I continue my quest for knowledge and inspiration. I find myself engrossed in podcasts
-          and documentaries, particularly those related to history, which provide a fascinating window into the past.
-          Since I often find myself cooking for myself, I dedicate a significant amount of time to experimenting with
-          new recipes and culinary techniques, continually expanding my culinary repertoire. In the realm of web
-          development, I'm constantly staying up-to-date with the latest technological advancements and exploring new
-          frameworks, ensuring that I remain at the forefront of my field.</p>
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="wrap reveal">
+        <p class="eyebrow">04 · Contact</p>
+        <h2>Let's build something <em>together</em>.</h2>
+        <a class="contact__mail" href="mailto:seifeddine.bensalah@gmail.com">seifeddine.bensalah@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://www.linkedin.com/in/seifeddinebensalah/" target="_blank" rel="noopener">LinkedIn <span
+              aria-hidden="true">↗</span></a>
+          <a href="https://github.com/SeifeddineBS" target="_blank" rel="noopener">GitHub <span
+              aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
+  </main>
 
+  <footer class="footer wrap">
+    <span>© <span id="year">2026</span> Seifeddine Ben Salah</span>
+    <span>Landsberg am Lech, Germany</span>
+  </footer>
 
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-  <script src="script.js"></script>
-
-
-
-
+  <script src="assets/main.js" defer></script>
 </body>
 
 </html>
