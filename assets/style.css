@@ -248,7 +248,7 @@ em { font-style: italic; color: var(--accent); }
 .link:hover span, .mini:hover h4 span, .contact__links a:hover span { transform: translate(3px, -3px); }
 
 .more { border-top: 1px solid var(--line); padding-top: clamp(28px, 4vw, 48px); }
-.more__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+.more__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
 .mini {
   display: block; text-decoration: none; padding: 24px;
   border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-raised);
